@@ -15,7 +15,6 @@ export default function Chat() {
     const q = question.trim();
     if (!q) return;
 
-    // Build the payload with optional last Q/A
     const payload: any = { question: q };
     if (lastQ && lastA) {
       payload.last_question = lastQ;
@@ -29,12 +28,12 @@ export default function Chat() {
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error(`Server error ${res.status}`);
-      const data = await res.json();           // { answer: string }
+      const data = await res.json();           
 
-      setLastQ(q);                             // store the current Q as lastQ
-      setLastA(data.answer);                   // and the returned answer as lastA
+      setLastQ(q);                            
+      setLastA(data.answer);                  
       setOutput(data.answer);
-      setQuestion("");                         // clear input
+      setQuestion("");
     } catch (err: any) {
       console.error(err);
     }

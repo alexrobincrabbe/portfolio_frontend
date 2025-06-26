@@ -1,23 +1,29 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Chat from './pages/Chat';
-import { Routes, Route } from 'react-router-dom';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Projects from "./pages/projects";
+import Chat from "./components/Chat";
+import Contact from "./pages/contact";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
     <>
-    <Navbar />
-    <Routes>    
-        <Route path='/chat' element={<Chat />} />
-    </Routes>
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Tailwind is working!
-      </h1>
-    </div>
+      <div className="min-h-screen bg-gray-100">
+        <Navbar />
+        <div className="pt-32 flex items-center justify-center ">
+          <Routes>
+            <Route path="/" element={<Home />} />
+             <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+               <Route path="/chat" element={<Chat />} />
+                <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
