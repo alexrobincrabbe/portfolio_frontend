@@ -2,7 +2,8 @@
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-
+import { API_BASE } from "../../config";
+console.log(API_BASE)
 type Msg = { role: "user" | "assistant"; content: string };
 
 export default function Chat() {
@@ -22,7 +23,7 @@ export default function Chat() {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/chat", {
+      const res = await fetch(`${API_BASE}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
