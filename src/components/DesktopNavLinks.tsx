@@ -1,7 +1,7 @@
-import { NavLink } from 'react-router-dom';
-import { links } from '../config/navLinks';
+import { NavLink } from "react-router-dom";
+import { links } from "../config/navLinks";
+
 export default function DesktopNavLinks() {
-  
   return (
     <>
       {links.map(({ to, label }) => (
@@ -10,8 +10,8 @@ export default function DesktopNavLinks() {
           to={to}
           className={({ isActive }) =>
             isActive
-              ? "text-blue-600 font-semibold"
-              : "text-gray-700 hover:text-blue-600"
+              ? "text-gray-700 font-semibold"
+              : "text-white hover:text-gray-700"
           }
         >
           {label}

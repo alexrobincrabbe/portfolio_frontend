@@ -1,9 +1,9 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./pages/home";
+import Home from "./pages/home/home";
 import About from "./pages/about";
 import Projects from "./pages/projects";
-import Chat from "./components/Chat";
+import Chat from "./pages/assistant/components/Chat";
 import Contact from "./pages/contact";
 import { Routes, Route } from "react-router-dom";
 

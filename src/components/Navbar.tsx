@@ -8,13 +8,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-md fixed w-full z-10">
-      <div className="max-w-4xl mx-auto px-4 flex items-center justify-between h-16">
+    <nav className="shadow-md fixed w-full z-10">
+      <div className=" text-white bg-blue-300 mx-auto px-4 flex items-center justify-between md:justify-start h-16">
         <MobMenuBtn open={open} setOpen={setOpen} />
-        <NavLink to="/" className="text-xl font-bold">
+        <NavLink to="/" className="md:text-4xl font-bold">
           Alex Crabbe's Portfolio
         </NavLink>
-        <div className="hidden md:flex space-x-6">
+        <div className="mr-20 ml-20 grow-1 mx-auto hidden md:flex justify-between space-x-6">
           <DesktopNavLinks />
         </div>
       </div>
