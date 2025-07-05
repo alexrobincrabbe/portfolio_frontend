@@ -1,9 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/home/home";
-import About from "./pages/about";
-import Projects from "./pages/projects";
-import Chat from "./pages/assistant/components/Chat";
+import Projects from "./pages/projects/projects";
 import Contact from "./pages/contact";
 import { Routes, Route } from "react-router-dom";
 
@@ -12,13 +10,11 @@ function App() {
     <>
       <div className="min-h-screen bg-gray-100">
         <Navbar />
-        <div className="pt-32 flex items-center justify-center ">
+        <div className="pt-32 flex items-center justify-center flex-col">
           <Routes>
             <Route path="/" element={<Home />} />
-             <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-               <Route path="/chat" element={<Chat />} />
-                <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>

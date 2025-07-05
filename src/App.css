@@ -1,0 +1,12 @@
+/* src/index.css */
+.loading-dots::after {
+  content: "";
+  animation: blink-dots 1.2s steps(4,start) infinite;
+}
+
+@keyframes blink-dots {
+  0%, 20%   { content: "";   }
+  40%       { content: ".";  }
+  60%       { content: ".."; }
+  80%,100% { content: "..."; }
+}
