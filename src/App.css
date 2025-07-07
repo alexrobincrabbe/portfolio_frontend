@@ -1,4 +1,3 @@
-/* src/index.css */
 .loading-dots::after {
   content: "";
   animation: blink-dots 1.2s steps(4,start) infinite;

@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import "tailwindcss";
 
+
+@layer components {
+  .project-card {
+    @apply m-10 p-10 bg-gray-300 rounded-sm
+  }
+
+  .ext-link {
+    @apply underline text-blue-800
+  }
+
+  h1 {
+    @apply text-3xl
+  }
+}
+
+@theme {
+    --font-monoton : "Monoton", sans-serif;
+}
 
