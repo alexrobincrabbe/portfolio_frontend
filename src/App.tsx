@@ -8,9 +8,9 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen flex flex-col bg-gray-100">
         <Navbar />
-        <div className="pt-32 flex items-center justify-center flex-col">
+        <div className="pt-16 flex items-center justify-center">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />

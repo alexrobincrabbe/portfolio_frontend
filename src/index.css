@@ -1,22 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 @import "tailwindcss";
 
-
 @layer components {
+  h1 {
+    @apply text-3xl mb-4;
+  }
+
+  h2{
+    @apply text-xl mb-2
+  }
+
   .project-card {
-    @apply m-10 p-10 bg-gray-300 rounded-sm
+    @apply 
+    mx-3 my-6 p-5   
+    md:m-10 md:p-10 
+    bg-gray-300 rounded-sm;
+  }
+
+  .text-color-1 {
+    @apply text-blue-500
   }
 
   .ext-link {
-    @apply underline text-blue-800
+    @apply underline text-blue-800;
   }
 
-  h1 {
-    @apply text-3xl
+.project-footer{
+    @apply flex justify-start
+}
+  .chat-input {
+    @apply 
+    border border-blue-300
+    rounded-4xl
+    mr-1 px-3 py-1
+    focus:outline-none
+    focus:ring-2 focus:ring-blue-300 focus:ring-offset-0 focus:ring-inset
+    transition duration-150 ease-in-out;
   }
 }
 
 @theme {
-    --font-monoton : "Monoton", sans-serif;
+  --font-monoton: "Monoton", sans-serif;
 }
-

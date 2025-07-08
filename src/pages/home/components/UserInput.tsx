@@ -1,11 +1,5 @@
-import type { ChangeEvent, FC } from "react";
-
-interface InputProps {
-  value: string;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
-  placeholder?: string;
-  className?: string;
-}
+import type { FC } from "react";
+import type { InputProps } from "../types";
 
 const UserInput: FC<InputProps> = ({
   value,
@@ -20,12 +14,7 @@ const UserInput: FC<InputProps> = ({
       onChange={onChange}
       placeholder={placeholder}
       className={`
-        border border-blue-300
-        rounded-4xl
-        mr-1 px-3 py-1
-        focus:outline-none
-        focus:ring-2 focus:ring-blue-300 focus:ring-offset-0 focus:ring-inset
-        transition duration-150 ease-in-out
+        chat-input
         ${className}
       `}
     />
