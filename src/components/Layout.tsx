@@ -18,7 +18,7 @@ export default function Layout() {
         {/* Backdrop closes the sidebar when clicking outside (mobile only) */}
       {open && (
         <div
-          className="fixed inset-0 bg-black/30 z-30 xl:hidden"
+          className="fixed inset-0 bg-black/30 z-2 xl:hidden"
           onClick={() => setOpen(false)}
         />
       )}

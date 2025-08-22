@@ -12,6 +12,7 @@ export default function Sidebar(props : SidebarProps) {
     <>
       <aside
         className={`
+            z-3
             w-64 h-full
             blue bg-sky-300 border-right-blue shadow-xl
             fixed  top-16 left-0
