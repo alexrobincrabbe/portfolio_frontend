@@ -19,9 +19,14 @@ export function useChat() {
             setLastQ(thisQ)
             setLastA(answer)
             setOutput(answer)
-        } catch (err: any) {
-            setError(err)
-        } finally {
+        } catch (err: unknown) {
+            if (err instanceof Error) {
+                setError(err)
+            } else {
+                setError(new Error(String(err)))
+            }
+        }
+        finally {
             setLoading(false)
         }
     }

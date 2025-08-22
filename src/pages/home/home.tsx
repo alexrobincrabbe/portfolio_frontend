@@ -22,7 +22,7 @@ export default function Home() {
                so after graduating I pivoted into software development. I completed an intensive full-stack development course in 2024. 
                I’ve since poured energy into a passion project: a multiplayer online word game platform that blends creativity with 
                technical challenge. It’s a project that I am excited to expand. 
-               The site has attracted players from across the world and has a vibrant user community
+               The site has attracted players from across the world and has a vibrant user community.
             </p>
           </div>
           <div className="w-full flex flex-col flex-1 justify-start items-center md:w-1/3 pb-3 order-1 md:order-3">
