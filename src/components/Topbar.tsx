@@ -8,14 +8,22 @@ export default function Topbar(props: TopbarProps) {
   const { onToggle } = props;
   return (
     <div className="
-    flex justify-start 
-    h-16 w-full
-    bg-sky-500
-    text-4xl">
-      <button className="xl:hidden" onClick={onToggle}>
-        <Menu size={48} />
+    flex items-center justify-start  
+     w-full
+    bg-background-theme
+    bb-blue
+    text-4xl lg:text-7xl xl:text-9xl">
+      <button className="lg:hidden" onClick={onToggle}>
+        <Menu size={32} />
       </button>
-      <div className="flex justify-center items-center w-full">Alex Crabbe</div>
+      <div className="
+      flex justify-center items-center text-center 
+      w-full h-10 lg:h-32
+      big-shoulders
+      bg-gradient-to-r from-pink-500 via-yellow-500 to-green-500 bg-clip-text text-transparent
+      "
+      >Alexander Robin Crabbe
+      </div>
     </div>
   );
 }

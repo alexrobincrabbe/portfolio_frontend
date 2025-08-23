@@ -8,7 +8,7 @@ export default function Layout() {
   const [visible, setVisible] = useState(true); // desktop
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
+    <div className="h-screen flex flex-col bg-background-theme text-white">
         <Topbar onToggle={()=> setOpen((prev) => (!prev))} />
         <Sidebar
           open={open}
@@ -23,9 +23,14 @@ export default function Layout() {
         />
       )}
       <main
-        className={`flex-1 transition-all duration-300 ease-in-out ${
-          visible ? "xl:ml-64" : "xl:ml-0"
-        }`}
+        className={`
+            bg-background-theme 
+            min 
+            flex-1 
+            transition-all duration-300 ease-in-out 
+            ${visible ? "lg:ml-64" : "lg:ml-0"}
+            zen-loop
+            `}
       >
         <Outlet />
       </main>

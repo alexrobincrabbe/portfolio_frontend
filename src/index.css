@@ -6,31 +6,29 @@
     @apply text-3xl mb-4;
   }
 
-  h2{
-    @apply text-xl mb-2
+  h2 {
+    @apply text-xl mb-2;
   }
 
   .project-card {
-    @apply 
-    mx-3 my-6 p-5   
+    @apply mx-3 my-6 p-5   
     md:m-10 md:p-10 
     bg-gray-300 rounded-sm;
   }
 
   .text-color-1 {
-    @apply text-blue-500
+    @apply text-blue-500;
   }
 
   .ext-link {
     @apply underline text-blue-800;
   }
 
-.project-footer{
-    @apply flex justify-start
-}
+  .project-footer {
+    @apply flex justify-start;
+  }
   .chat-input {
-    @apply 
-    border border-blue-300
+    @apply border border-blue-300
     rounded-4xl
     mr-1 px-3 py-1
     focus:outline-none
@@ -41,4 +39,6 @@
 
 @theme {
   --font-monoton: "Monoton", sans-serif;
+  --color-background-theme: #2c2a45;
+  --color-background-dark: #252445;
 }

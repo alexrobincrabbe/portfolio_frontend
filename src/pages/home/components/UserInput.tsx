@@ -1,16 +1,18 @@
-import type { FC } from "react";
-import type { InputProps } from "../types";
+interface InputProps  {
+  value: string;
+  onChange: (e:React.ChangeEvent<HTMLInputElement>) => void;
+  onKeyDown: (e:React.KeyboardEvent<HTMLInputElement>) => void;
+  placeholder?: string;
+  className?: string;
+}
 
-const UserInput: FC<InputProps> = ({
-  value,
-  onChange,
-  placeholder = "",
-  className = "",
-}) => {
+function UserInput (props:InputProps) {
+     const {value, onChange, onKeyDown, placeholder = "", className = ""} = props
   return (
     <input
       type="text"
       value={value}
+      onKeyDown={onKeyDown}
       onChange={onChange}
       placeholder={placeholder}
       className={`

@@ -1,6 +1,15 @@
 // src/services/chat.ts
 import { API_BASE } from "../../../../config"
-import type { Payload, ChatResponse } from "../types"
+
+interface Payload {
+  question: string;
+  last_question?: string;
+  last_answer?: string;
+}
+
+interface ChatResponse {
+    answer: string;
+}
 
 export function buildPayload(thisQ: string, lastQ: string | null, lastA: string | null)
     : Payload {

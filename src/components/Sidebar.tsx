@@ -13,32 +13,33 @@ export default function Sidebar(props : SidebarProps) {
       <aside
         className={`
             z-3
+            font-mono
             w-64 h-full
-            blue bg-sky-300 border-right-blue shadow-xl
-            fixed  top-16 left-0
+            blue bg-background-theme border-r-2 border-blue-300
+            fixed  top-10 lg:top-32 left-0
             transform transition-transform duration-300 ease-in-out
             ${open ? "translate-x-0" : "-translate-x-full"} 
-            ${visible ? "xl:translate-x-0" : "xl:-translate-x-full"}
+            ${visible ? "lg:translate-x-0" : "lg:-translate-x-full"}
             `}
       >
        
-        <div className="relative h-full p-4 space-y-4">
-          <nav className="space-y-2">
+        <div className="relative h-full p-4 space-y-4 text-3xl">
+          <nav className="space-y-10 pt-20">
             <NavLink
               to="/"
-              className="block px-3 py-2 rounded hover:bg-gray-100"
+              className="text-pink-500 block px-3 py-2 rounded hover:bg-gray-100"
             >
               Home
             </NavLink>
             <NavLink
               to="/projects"
-              className="block px-3 py-2 rounded hover:bg-gray-100"
+              className="text-yellow-500 block px-3 py-2 rounded hover:bg-gray-100"
             >
               Projects
             </NavLink>
             <NavLink
               to="/contact"
-              className="block px-3 py-2 rounded hover:bg-gray-100"
+              className="text-green-500 block px-3 py-2 rounded hover:bg-gray-100"
             >
               Contact
             </NavLink>
@@ -49,8 +50,8 @@ export default function Sidebar(props : SidebarProps) {
             className="
             hidden
             w-6 h-12
-            bg-gray-200 hover:bg-gray-300
-            xl:flex items-center justify-center
+            bg-background-dark hover:bg-gray-300
+            lg:flex items-center justify-center
             absolute top-1/2 right-0  
             translate-x-full -translate-y-1/2
             rounded-r shadow
