@@ -6,21 +6,25 @@ export default function Projects() {
   return (
     <>
       <div className="md:p-10">
-        <div className="project-card">
+        <div className="project-card glowing-blue-border">
           <PortfolioContent />
         </div>
-        <div className="project-card">
+        <div className="project-card glowing-blue-border">
           <BoojumContent />
         </div>
 
         <div>
-          <div className="project-card">
-            <HackathonsContent/>
+          <div className="project-card glowing-blue-border">
+            <HackathonsContent />
           </div>
         </div>
-         <div>
-          <div className="project-card">
-            <CodeInstituteProjectsContent/>
+        <div>
+          <div
+            className={`
+          project-card glowing-blue-border
+          `}
+          >
+            <CodeInstituteProjectsContent />
           </div>
         </div>
       </div>

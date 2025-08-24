@@ -1,22 +1,21 @@
 export default function HackathonsContent() {
   return (
     <>
-      <h1>Hackathon Projects</h1>
-      <h2>AI assistant</h2>
+      <h1 className="glowing-blue">Hackathon Projects</h1>
+      <h2 className="text-yellow-500 text-3xl">AI-powered hackathon prototype with RAG and citations</h2>
       <p>
-        This was built for the{" "}
-        <a href="https://chef-treff.de/" target="_blank" className="ext-link">
+        Built for the <a href="https://chef-treff.de/" target="_blank" className="ext-link">
           Cheftreff
-        </a>{" "}
-        Hackathon in April 2025. The Hackathon was in person, and I worked in a
-        team of 3 to build a simple AI application. I focussed on using
-        LLamaIndex to generate the RAG and include citations in the responses.
+        </a> Hackathon in April 2025. This was an in-person
+        event where I collaborated with a team of three to develop a simple AI
+        application. My focus was on using LlamaIndex to generate the RAG and
+        provide responses with citations..
       </p>
-      <span className="text-color-1">Frameworks</span>: Flask, LlamaIndex
+      <span className="glowing-blue">Frameworks</span>: Flask, LlamaIndex
       <br />
-      <span className="text-color-1">Languages</span>:Python
+      <span className="glowing-blue">Languages</span>:Python
       <br />
-      <span className="text-color-1">Other</span>: OpenAI API
+      <span className="glowing-blue">Other</span>: OpenAI API
       <br />
       <a
         href="https://github.com/alexrobincrabbe/ai-hackathon-2025"
@@ -26,7 +25,7 @@ export default function HackathonsContent() {
         Source code
       </a>
       <br /> <br />
-      <h2>LunaCareAI</h2>
+      <h2 className="text-yellow-500 text-3xl">Healthcare AI assistant with speech recognition</h2>
       <p>
         I took part in the &nbsp;
         <a
@@ -35,21 +34,22 @@ export default function HackathonsContent() {
           className="ext-link"
         >
           Build With AI
-        </a>{" "}
-        hackathon in November 2024. I worked in a team of 8, 3 of whom were
-        developers. We organised our team via slack and had daily standups, as
-        well as additional meetings for devs over 4 days. I focussed on building
-        the Django backend and connecting it to the react frontend via the
-        Django Rest Framework, as well as integrating speech recognition at the
-        front end. For expendiency, I used Gitpod to share the development
-        environment for the demo (link to video below).
+        </a>
+        I participated in the Build With AI Hackathon in November 2024 as part
+        of a team of eight, including three developers. We organised the team
+        via Slack, held daily stand-ups and scheduled additional developer
+        meetings over the four day event. My focus was on building the Django
+        backend and connecting it to the React frontend through the Django REST
+        Framework, as well as integrating speech recognition into the frontend.
+        For expediency, I used Gitpod to share the development environment for
+        our demo (see video link below).
       </p>
-      <span className="text-color-1">Frameworks</span>: Django, React, Langchain
+      <span className="glowing-blue">Frameworks</span>: Django, React, Langchain
       <br />
-      <span className="text-color-1">Languages</span>: Python, JavaScript,
+      <span className="glowing-blue">Languages</span>: Python, JavaScript,
       TypeScript
       <br />
-      <span className="text-color-1">Other</span>: OpenAI API, Gitpod
+      <span className="glowing-blue">Other</span>: OpenAI API, Gitpod
       <br />
       <a
         href="https://github.com/alexrobincrabbe/LunaCareAI"
@@ -68,15 +68,16 @@ export default function HackathonsContent() {
       </a>
       <br />
       <br />
-      <h2>Star Wars Fansite</h2>
+      <h2 className="text-yellow-500 text-3xl">Star Wars Fansite</h2>
       <p>
-        An early project as part as one of the Code Institute hackathons. My
-        main focus was the Wiki page. We used a Kanban and had daily standups
-        over 5 days. I gained some experience in merging conflicts on Github.
+        An early project created for one of the Code Institute hackathons. My
+        main focus was developing the Wiki page. Over the five day event, our
+        team worked with a kanban board and held daily stand-ups. Through this
+        project, I gained experience resolving merge conflicts on GitHub.
       </p>
-      <span className="text-color-1">languages</span>: HTML, CSS, JavaScript
+      <span className="glowing-blue">languages</span>: HTML, CSS, JavaScript
       <br />
-      <span className="text-color-1">Other</span>: Github, Agile
+      <span className="glowing-blue">Other</span>: Github, Agile
       <br />
       <a
         href="https://github.com/alexrobincrabbe/2405-hackathon-team1-StarWars"

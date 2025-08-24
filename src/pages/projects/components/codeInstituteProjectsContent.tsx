@@ -1,15 +1,21 @@
 export default function CodeInstituteProjectsContent() {
   return (
     <>
-      <h1>Code Institute Projects</h1>
-      <h2>How to Build a Treehouse</h2>
+      <h1 className="glowing-blue">Code Institute Projects</h1>
+      <h2 className="text-yellow-500 text-3xl">
+        How to Build a Treehouse
+      </h2>
+      <span className="italic text-blue-300">
+        Introductory static site built with HTML & CSS
+      </span>
       <p>
-        This was my first project as part of my course at Code Institute. Using
-        only HTML and CSS. You can also see my Treehouse building skills.
+        My first project at Code Institute, created using only HTML and CSS. As
+        well as showcasing my coding, it also playfully highlights my treehouse
+        building skills.
       </p>
-      <span className="text-color-1">Languages</span>:HTML, CSS
+      <span className="glowing-blue">Languages</span>:HTML, CSS
       <br />
-      <span className="text-color-1">Other</span>: Github
+      <span className="glowing-blue">Other</span>: Github
       <br />
       <a
         href="https://github.com/alexrobincrabbe/build_a_treehouse"
@@ -27,11 +33,16 @@ export default function CodeInstituteProjectsContent() {
         Site
       </a>
       <br /> <br />
-      <h2>Boop Ball</h2>
-      <p>My second project was a javascript game, deployed on github.</p>
-      <span className="text-color-1">Languages</span>: JavaScript, HTML, CSS
+      <h2 className="text-yellow-500 text-3xl">Boop Ball</h2>
+      <span className="italic text-blue-300">
+        Interactive browser game built with JavaScript
+      </span>
+      <p>
+        My second project, a simple JavaScript game deployed via GitHub Pages.
+      </p>
+      <span className="glowing-blue">Languages</span>: JavaScript, HTML, CSS
       <br />
-      <span className="text-color-1">Other</span>: Github
+      <span className="glowing-blue">Other</span>: Github
       <br />
       <a
         href="https://github.com/alexrobincrabbe/Boopball"
@@ -40,7 +51,7 @@ export default function CodeInstituteProjectsContent() {
       >
         Source code
       </a>
-       &nbsp;
+      &nbsp;
       <a
         href="https://alexrobincrabbe.github.io/Boopball/"
         target="_blank"
@@ -49,15 +60,18 @@ export default function CodeInstituteProjectsContent() {
         Site
       </a>
       <br /> <br />
-      <h2>Terminal Based RPG</h2>
+      <h2 className="text-yellow-500 text-3xl">Terminal Based RPG</h2>
+      <span className="italic text-blue-300">
+        Python text RPG with Google Sheets integration
+      </span>
       <p>
-        My third project was written in python, and uses a mock-terminal
-        deployed to Heroku for demo purpose. The high scores are saved using
-        Google Sheets and the Google Cloud Console API.
+        My third project, a Python based roleplaying game running in a mock
+        terminal and deployed to Heroku. High scores are stored in Google Sheets
+        via the Google Cloud Console API.
       </p>
-      <span className="text-color-1">Languages</span>: Python
+      <span className="glowing-blue">Languages</span>: Python
       <br />
-      <span className="text-color-1">Other</span>: Github, Heroku, Google Cloud
+      <span className="glowing-blue">Other</span>: Github, Heroku, Google Cloud
       Console
       <br />
       <a
@@ -67,7 +81,7 @@ export default function CodeInstituteProjectsContent() {
       >
         Source code
       </a>
-       &nbsp;
+      &nbsp;
       <a
         href="https://monstoryum-24200bf7a5d2.herokuapp.com/"
         target="_blank"
@@ -76,19 +90,23 @@ export default function CodeInstituteProjectsContent() {
         Site
       </a>
       <br /> <br />
-      <h2>Wordwell Game</h2>
+      <h2 className="text-yellow-500 text-3xl">Wordwell Game</h2>
+      <span className="italic text-blue-300">
+        Full-stack word game with Django
+      </span>
       <p>
-        My first full-stack project, using Django. I used Agile methodologies,
-        User Stories, Manual and Automatic (python) tests.
+        My first full-stack project, built with Django. I applied Agile
+        methodologies, wrote user stories and implemented both manual and
+        automated (Python) testing.
       </p>
-      <span className="text-color-1">Frameworks</span>: Django, Bootstrap
+      <span className="glowing-blue">Frameworks</span>: Django, Bootstrap
       <br />
-      <span className="text-color-1">Languages</span>: Python, JavaScript
+      <span className="glowing-blue">Languages</span>: Python, JavaScript
       <br />
-      <span className="text-color-1">Database</span>: Neon Database (Postgres
+      <span className="glowing-blue">Database</span>: Neon Database (Postgres
       SQL)
       <br />
-      <span className="text-color-1">Other</span>: Github, Cloudinary
+      <span className="glowing-blue">Other</span>: Github, Cloudinary
       <br />
       <a
         href="https://github.com/alexrobincrabbe/Wordwell"
@@ -97,7 +115,7 @@ export default function CodeInstituteProjectsContent() {
       >
         Source code
       </a>
-       &nbsp;
+      &nbsp;
       <a
         href="https://wordwellgame-bdb245abd266.herokuapp.com/"
         target="_blank"
@@ -106,16 +124,21 @@ export default function CodeInstituteProjectsContent() {
         Site
       </a>
       <br /> <br />
-      <h2>Brain Tumour Diagnostic Tool</h2>
-      My final project was a machine learning Project. The application uses
-      convolutions filters to train a machine learning alogorthym to catogorize
-      MRI brian scans in to 4 categories(1 health, 3 tumour types). 
-      <span className="text-color-1">Frameworks</span>: Streamlit, Tensorflow;
+      <h2 className="text-yellow-500 text-3xl">Brain Tumour Diagnostic Tool</h2>
+      <span className="italic text-blue-300">
+        Machine learning app for MRI image classification
+      </span>
+        <br />
+      My final Code Institute project, a machine learning application that
+      trains a convolutional neural network to classify MRI brain scans into
+      four categories (1 healthy, 3 tumour types).
+      <br />
+      <span className="glowing-blue">Frameworks</span>: Streamlit, Tensorflow;
       Pandas, Numpy
       <br />
-      <span className="text-color-1">Languages</span>: Python
+      <span className="glowing-blue">Languages</span>: Python
       <br />
-      <span className="text-color-1">Other</span>: Github, Kaggle, Jupyter
+      <span className="glowing-blue">Other</span>: Github, Kaggle, Jupyter
       Notebooks
       <br />
       <a
@@ -125,7 +148,7 @@ export default function CodeInstituteProjectsContent() {
       >
         Source code
       </a>
-       &nbsp;
+      &nbsp;
       <a
         href="https://brain-tumour-diagnostic-d316f77538fb.herokuapp.com/"
         target="_blank"

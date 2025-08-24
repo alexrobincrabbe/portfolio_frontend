@@ -1,19 +1,25 @@
 export default function PortfolioContent() {
   return (
     <>
-      <h1 className="font-bold">Portfolio</h1>
+      <h1
+        className="
+      w-fit
+      glowing-blue
+      "
+      >
+        Portfolio
+      </h1>
       <p>
-        This Portolio was built with a Vite/React/Tailwind frontend deployed
-        using Vercel. The backend which serves the AI chat was built with a
-        FastAPI backend, deployed to Heroku.{" "}
+        This portolio brings together a Vite/React/Tailwind frontend deployed
+        using Vercel, with an AI chat served by a FastAPI backend deployed on Heroku.
       </p>
-      <span className="text-color-1">Frameworks</span>: Vite/React, FastAPI,
+      <span className="glowing-blue">Frameworks</span>: Vite/React, FastAPI,
       Tailwind
       <br />
-      <span className="text-color-1">Languages</span>: Typescript, JavaScript,
+      <span className="glowing-blue">Languages</span>: Typescript, JavaScript,
       Python
       <br />
-      <span className="text-color-1">Other</span>: Vercel, Heroku, OpenAI API
+      <span className="glowing-blue">Other</span>: Vercel, Heroku, OpenAI API
       <p>
         Source code:&nbsp;
         <a

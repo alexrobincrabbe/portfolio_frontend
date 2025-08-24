@@ -3,7 +3,7 @@
 
 @layer components {
   h1 {
-    @apply text-3xl mb-4;
+    @apply text-5xl mb-4;
   }
 
   h2 {
@@ -12,16 +12,17 @@
 
   .project-card {
     @apply mx-3 my-6 p-5   
-    md:m-10 md:p-10 
-    bg-gray-300 rounded-sm;
-  }
-
-  .text-color-1 {
-    @apply text-blue-500;
+    md:m-10 md:p-10
+    border-2
+    rounded-xl
+    text-2xl;
   }
 
   .ext-link {
-    @apply underline text-blue-800;
+    @apply underline;
+    text-shadow: 2px 2px 6px rgb(99, 122, 166), -2px -2px 6px rgb(99, 122, 166),
+      2px -2px 6px rgb(99, 122, 166), -2px 2px 6px rgb(99, 122, 166);
+    color: rgb(113, 187, 233);
   }
 
   .project-footer {
@@ -41,4 +42,7 @@
   --font-monoton: "Monoton", sans-serif;
   --color-background-theme: #2c2a45;
   --color-background-dark: #252445;
+  --color-bj-pink: #eb5497;
+  --color-bj-green: #33c15b;
+  --color-bj-yellow:#f5ce45;
 }

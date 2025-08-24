@@ -1,43 +1,59 @@
+export default function BoojumContent() {
+  return (
+    <>
+      <h1 className="
+      font-monoton
+      ">
+        <span className="text-bj-pink">B</span>
+        <span className="text-bj-green">o</span>
+        <span className="text-bj-pink">o</span>
+        <span className="text-bj-green">j</span>
+        <span className="text-bj-pink">u</span>
+        <span className="text-bj-green">m</span>
+        &nbsp;&nbsp;
+        <span className="text-bj-pink">G</span>
+        <span className="text-bj-green">a</span>
+        <span className="text-bj-pink">m</span>
+        <span className="text-bj-green">e</span>
+        <span className="text-bj-pink">s</span>
+        </h1>
+      <p>
+        Boojum Games is an ongoing project I launched in October 2024, shortly
+        after completing my Full-Stack Software Development course. It is an
+        online multiplayer game with around 200 registered users and 30-50
+        active players. The live gameplay and chat are powered by web sockets
+        through Django Channels, with RabbitMQ handling the cache memory layer.
+        I have also developed Django command scripts to automate a wide range of
+        processes, including tournament management, gameboard generation, daily
+        boards and puzzles and the creation of the game dictionary.
+      </p>
+      <p>
+        Currently, I am working on migrating the Django templates to a React
+        frontend and converting my views into Django REST APIs using the Django
+        REST Framework. Looking ahead, I plan to develop a mobile app version
+        with React Native and to replace the Django views entirely with a
+        GraphQL endpoint.
+      </p>
+      <span className="glowing-blue">Frameworks</span>: Bootstrap, Django,
+      Django Channels
+      <br />
+      <span className="glowing-blue">Languages</span>: JavaScript, Python
+      <br />
+      <span className="glowing-blue">Database</span>: Neon Database (Postgres
+      SQL)
+      <br />
+      <span className="glowing-blue">Other</span>: Github, Heroku, RabbitMQ,
+      Google Cloud Console, MailGun, Heroku Scheduler, Papertrail
+      <br />
+       <a
+        href="https://boojumgames.com"
+        target="_blank"
+        className="ext-link"
+      >Link to site</a>
+      <br />
 
-export default function BoojumContent(){
-    return(
-        <>
-     <h1 className="font-monoton">Boojum Games</h1>
-          <p>
-            Boojum Games is an on ongoing project that I started in October 2024
-            after completing my Full-stack software development course.
-          </p>
-          <p>
-            It is An online Multiplyer game with around 200 registered users and
-            30-50 active users. The live game and chat uses web-sockets via the
-            Django Channels framework, and RabbitMQ to manage to cache memory
-            layer. I used Django Command scripts to automate many processes,
-            including management of the tournamens, generating the gameboards,
-            generating daily boards, daily puzzles, generating the game
-            dictionary.
-          </p>
-          <p>
-            I am also currently working on coverting the Django templates to a
-            React frontend and converting my views to Django Rest APIs using the
-            Django Rest Framework
-          </p>
-          <p>
-            I have plans to eventually build a mobile app version using React
-            Native, and eventually replace my Django views entirely with a
-            GraphQL endpoint.
-          </p>
-          <span className="text-color-1">Frameworks</span>: Bootstrap, Django,
-          Django Channels
-          <br />
-          <span className="text-color-1">Languages</span>: JavaScript, Python
-          <br />
-          <span className="text-color-1">Database</span>: Neon Database
-          (Postgres SQL)
-          <br />
-          <span className="text-color-1">Other</span>: Github, Heroku,
-          RabbitMQ, Google Cloud Console, MailGun, Heroku Scheduler, Papertrail
-          <br />
-          The source code is private.
-          </>
-    )
+      The source code is Top Secret.
+
+    </>
+  );
 }

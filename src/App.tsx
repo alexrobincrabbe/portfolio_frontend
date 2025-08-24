@@ -20,8 +20,6 @@ function App() {
   );
 }
 
-export default App;
-
 function SvgGradientDefs() {
   return (
     <svg width="0" height="0" className="absolute">
@@ -35,4 +33,7 @@ function SvgGradientDefs() {
     </svg>
   );
 }
-// Render <SvgGradientDefs /> somewhere once (e.g., inside <App />)
+
+export default App;
+
+
