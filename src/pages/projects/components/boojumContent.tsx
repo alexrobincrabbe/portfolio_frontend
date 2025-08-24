@@ -1,9 +1,11 @@
 export default function BoojumContent() {
   return (
     <>
-      <h1 className="
+      <h1
+        className="
       font-monoton
-      ">
+      "
+      >
         <span className="text-bj-pink">B</span>
         <span className="text-bj-green">o</span>
         <span className="text-bj-pink">o</span>
@@ -16,7 +18,7 @@ export default function BoojumContent() {
         <span className="text-bj-pink">m</span>
         <span className="text-bj-green">e</span>
         <span className="text-bj-pink">s</span>
-        </h1>
+      </h1>
       <p>
         Boojum Games is an ongoing project I launched in October 2024, shortly
         after completing my Full-Stack Software Development course. It is an
@@ -34,6 +36,7 @@ export default function BoojumContent() {
         with React Native and to replace the Django views entirely with a
         GraphQL endpoint.
       </p>
+      <br />
       <span className="glowing-blue">Frameworks</span>: Bootstrap, Django,
       Django Channels
       <br />
@@ -45,15 +48,16 @@ export default function BoojumContent() {
       <span className="glowing-blue">Other</span>: Github, Heroku, RabbitMQ,
       Google Cloud Console, MailGun, Heroku Scheduler, Papertrail
       <br />
-       <a
+      <a
         href="https://boojumgames.com"
         target="_blank"
-        className="ext-link"
-      >Link to site</a>
+        className="text-bj-yellow ext-link"
+      >
+        Link to site
+      </a>
       <br />
-
-      The source code is Top Secret.
-
+      <br />
+      <span className="italic">The source code is Top Secret.</span>
     </>
   );
 }

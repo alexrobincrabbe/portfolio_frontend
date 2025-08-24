@@ -133,12 +133,12 @@ export default function CodeInstituteProjectsContent() {
       trains a convolutional neural network to classify MRI brain scans into
       four categories (1 healthy, 3 tumour types).
       <br />
-      <span className="glowing-blue">Frameworks</span>: Streamlit, Tensorflow;
-      Pandas, Numpy
+      <span className="glowing-blue">Frameworks</span>: Streamlit, TensorFlow,
+      Pandas, NumPy
       <br />
       <span className="glowing-blue">Languages</span>: Python
       <br />
-      <span className="glowing-blue">Other</span>: Github, Kaggle, Jupyter
+      <span className="glowing-blue">Other</span>: GitHub, Kaggle, Jupyter
       Notebooks
       <br />
       <a

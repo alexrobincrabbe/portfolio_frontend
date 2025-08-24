@@ -9,7 +9,7 @@ export default function HackathonsContent() {
         </a> Hackathon in April 2025. This was an in-person
         event where I collaborated with a team of three to develop a simple AI
         application. My focus was on using LlamaIndex to generate the RAG and
-        provide responses with citations..
+        provide responses with citations.
       </p>
       <span className="glowing-blue">Frameworks</span>: Flask, LlamaIndex
       <br />
@@ -27,15 +27,15 @@ export default function HackathonsContent() {
       <br /> <br />
       <h2 className="text-yellow-500 text-3xl">Healthcare AI assistant with speech recognition</h2>
       <p>
-        I took part in the &nbsp;
+        I participated in the
+        &nbsp;
         <a
           href="https://newsletter.genai.works/p/buildwithai-hackathon-2024-win-big-connect-globally-and-make-an-impact-4505"
           target="_blank"
           className="ext-link"
         >
-          Build With AI
-        </a>
-        I participated in the Build With AI Hackathon in November 2024 as part
+        Build With AI
+        </a> Hackathon in November 2024 as part
         of a team of eight, including three developers. We organised the team
         via Slack, held daily stand-ups and scheduled additional developer
         meetings over the four day event. My focus was on building the Django
@@ -75,9 +75,9 @@ export default function HackathonsContent() {
         team worked with a kanban board and held daily stand-ups. Through this
         project, I gained experience resolving merge conflicts on GitHub.
       </p>
-      <span className="glowing-blue">languages</span>: HTML, CSS, JavaScript
+      <span className="glowing-blue">Languages</span>: HTML, CSS, JavaScript
       <br />
-      <span className="glowing-blue">Other</span>: Github, Agile
+      <span className="glowing-blue">Other</span>: GitHub, Agile
       <br />
       <a
         href="https://github.com/alexrobincrabbe/2405-hackathon-team1-StarWars"
