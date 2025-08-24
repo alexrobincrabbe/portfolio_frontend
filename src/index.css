@@ -38,6 +38,59 @@
   }
 }
 
+/* tailwind.css (or a globals.css that's loaded after Tailwind) */
+@layer utilities {
+  /* Base gradient text */
+  .text-rgb {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(90deg,
+      #ec4899 0%,#eab308 25%, #22c55e 50%, #ec4899 75%,#eab308 100%); /* yellow -> green -> pink */
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+  }
+
+  @keyframes rgbPulsePos {
+    0%, 100% { background-position: 0% 50%; }
+    50%      { background-position: 100% 50%; }
+  }
+
+  .rgb-pulse {
+    animation: rgbPulsePos 1.5s ease-in-out 1;
+    will-change: background-position;
+  }
+
+  /* Respect reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    .rgb-pulse { animation: none; }
+  }
+}
+.nav-link:hover{
+    background-color: transparent;
+    text-shadow: 2px 2px 6px rgb(99, 122, 166),
+    -2px -2px 6px rgb(99, 122, 166), 2px -2px 6px rgb(99, 122, 166),
+    -2px 2px 6px rgb(99, 122, 166);
+  color: rgb(113, 187, 233);    
+}
+
+.rgb-gradient-2{
+    @apply 
+    bg-gradient-to-r 
+    from-yellow-500 
+    via-green-500 
+    to-pink-500 
+    bg-clip-text 
+    text-transparent
+}
+.rgb-gradient{
+   @apply 
+    bg-gradient-to-r 
+    from-pink-500 
+    via-yellow-500 
+    to-green-500 
+    bg-clip-text 
+    text-transparent
+}
+
 @theme {
   --font-monoton: "Monoton", sans-serif;
   --color-background-theme: #2c2a45;
@@ -45,4 +98,8 @@
   --color-bj-pink: #eb5497;
   --color-bj-green: #33c15b;
   --color-bj-yellow:#f5ce45;
+}
+
+NavLink{
+
 }

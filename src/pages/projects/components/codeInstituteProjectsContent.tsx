@@ -15,7 +15,7 @@ export default function CodeInstituteProjectsContent() {
       </p>
       <span className="glowing-blue">Languages</span>:HTML, CSS
       <br />
-      <span className="glowing-blue">Other</span>: Github
+      <span className="glowing-blue">Other</span>: GitHub
       <br />
       <a
         href="https://github.com/alexrobincrabbe/build_a_treehouse"
@@ -42,7 +42,7 @@ export default function CodeInstituteProjectsContent() {
       </p>
       <span className="glowing-blue">Languages</span>: JavaScript, HTML, CSS
       <br />
-      <span className="glowing-blue">Other</span>: Github
+      <span className="glowing-blue">Other</span>: GitHub
       <br />
       <a
         href="https://github.com/alexrobincrabbe/Boopball"
@@ -71,7 +71,7 @@ export default function CodeInstituteProjectsContent() {
       </p>
       <span className="glowing-blue">Languages</span>: Python
       <br />
-      <span className="glowing-blue">Other</span>: Github, Heroku, Google Cloud
+      <span className="glowing-blue">Other</span>: GitHub, Heroku, Google Cloud
       Console
       <br />
       <a
@@ -106,7 +106,7 @@ export default function CodeInstituteProjectsContent() {
       <span className="glowing-blue">Database</span>: Neon Database (Postgres
       SQL)
       <br />
-      <span className="glowing-blue">Other</span>: Github, Cloudinary
+      <span className="glowing-blue">Other</span>: GitHub, Cloudinary
       <br />
       <a
         href="https://github.com/alexrobincrabbe/Wordwell"

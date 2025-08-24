@@ -4,6 +4,7 @@ export default function BoojumContent() {
       <h1
         className="
       font-monoton
+      text-3xl md:text-4xl
       "
       >
         <span className="text-bj-pink">B</span>
@@ -45,7 +46,7 @@ export default function BoojumContent() {
       <span className="glowing-blue">Database</span>: Neon Database (Postgres
       SQL)
       <br />
-      <span className="glowing-blue">Other</span>: Github, Heroku, RabbitMQ,
+      <span className="glowing-blue">Other</span>: GitHub, Heroku, RabbitMQ,
       Google Cloud Console, MailGun, Heroku Scheduler, Papertrail
       <br />
       <a

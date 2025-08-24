@@ -11,13 +11,15 @@ export default function Contact() {
   });
   const [status, setStatus] = useState<Status>("idle");
 
-  const handleChange = ( e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
-  const handleSubmit = async  (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("sending");
     try {
@@ -36,23 +38,31 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <input
-          name="name"
-          type="text"
-          placeholder="Name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        <input
-          name="email"
-          type="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
+    <div className="w-full max-w-200 m-auto h-full p-5 md:h-fit md:p-20">
+      <form
+        className="glowing-blue-border rounded-3xl w-full h-full p-10 bg-background-dark text-3xl flex justify-center items-center flex-col"
+        onSubmit={handleSubmit}
+      >
+        <div className="w-full flex justify-between flex-col md:flex-row">
+          <input
+            className="rounded-3xl glowing-blue-border mb-10 mr-0 w-full md:mb-0 md:mr-5 md:w-1/2  p-2"
+            name="name"
+            type="text"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <input
+            className="rounded-3xl glowing-blue-border ml-0 w-full md:ml-5 md:w-1/2 p-2"
+            name="email"
+            type="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </div>
         <textarea
+          className="rounded-3xl h-60 w-full glowing-blue-border m-10 p-2"
           name="message"
           placeholder="Message"
           value={formData.message}
@@ -62,6 +72,6 @@ export default function Contact() {
           {status === "sending" ? "Sending..." : "Send"}
         </button>
       </form>
-    </>
+    </div>
   );
 }

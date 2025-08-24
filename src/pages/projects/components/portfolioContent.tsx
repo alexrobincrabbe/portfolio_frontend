@@ -21,7 +21,7 @@ export default function PortfolioContent() {
       <span className="glowing-blue">Languages</span>: Typescript, JavaScript,
       Python
       <br />
-      <span className="glowing-blue">Other</span>: Github, Vercel, Heroku, OpenAI API
+      <span className="glowing-blue">Other</span>: GitHub, Vercel, Heroku, OpenAI API
       <p>
         Source code:&nbsp;
         <a
