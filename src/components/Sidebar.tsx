@@ -53,19 +53,19 @@ export default function Sidebar(props: SidebarProps) {
             onClick={onToggle}
             className={`
                 hidden w-6 h-12
-                bg-background-dark hover:bg-gray-300
+                bg-yellow-500 hover:bg-gray-300
                 lg:flex items-center justify-center
                 absolute top-1/2
-                ${visible ? "right-6" : "right-0"}
+                ${visible ? "right-6 rounded-l" : "right-0 rounded-r "}
                 translate-x-full -translate-y-1/2
-                rounded-r shadow
+                shadow
             `}
             title={visible ? "Collapse sidebar" : "Expand sidebar"}
           >
             {visible ? (
-              <ChevronLeft className="w-4 h-4" />
+              <ChevronLeft className="w-4 h-4 text-green-500" />
             ) : (
-              <ChevronRight className="w-4 h-4" />
+              <ChevronRight className="w-4 h-4 text-pink-500" />
             )}
           </button>
         </div>

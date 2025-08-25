@@ -20,7 +20,7 @@ export default function Topbar(props: TopbarProps) {
         w-full
         bg-background-theme
         bb-blue
-        text-4xl lg:text-7xl xl:text-9xl`}
+        text-4xl lg:text-7xl xl:text-8xl xxl:text-9xl`}
     >
       <button className="lg:hidden" onClick={onToggle}>
         <Menu size={32} />

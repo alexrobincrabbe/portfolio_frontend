@@ -52,7 +52,7 @@ export default function BoojumContent() {
       <a
         href="https://boojumgames.com"
         target="_blank"
-        className="text-bj-yellow ext-link"
+        className="ext-link"
       >
         Link to site
       </a>
