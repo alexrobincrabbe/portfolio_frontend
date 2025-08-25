@@ -59,7 +59,9 @@
     0%, 100% { background-position: 0% 50%; }
     50%      { background-position: 100% 50%; }
   }
-
+.chat-output a{
+    text-decoration: underline;
+}
   .rgb-pulse {
     animation: rgbPulsePos 1.5s ease-in-out 1;
     will-change: background-position;

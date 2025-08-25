@@ -95,7 +95,9 @@ function Chat() {
         w-full h-80
         mt-2 md:mt-10 p-5
         bg-background-dark shadow-sm shadow-blue-300   
-        overflow-y-auto rounded-xl"
+        overflow-y-auto rounded-xl
+        chat-output
+        "
         >
           {output && visible && !done && (
             <ReactTyped
