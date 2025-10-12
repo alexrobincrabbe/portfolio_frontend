@@ -30,13 +30,6 @@ export default function BoojumContent() {
         processes, including tournament management, gameboard generation, daily
         boards and puzzles and the creation of the game dictionary.
       </p>
-      <p>
-        Currently, I am working on migrating the Django templates to a React
-        frontend and converting my views into Django REST APIs using the Django
-        REST Framework. Looking ahead, I plan to develop a mobile app version
-        with React Native and to replace the Django views entirely with a
-        GraphQL endpoint.
-      </p>
       <br />
       <span className="glowing-blue">Frameworks</span>: Bootstrap, Django,
       Django Channels
