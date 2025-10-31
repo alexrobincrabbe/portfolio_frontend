@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 @import "tailwindcss";
 
-
 @layer components {
   h1 {
     @apply text-5xl mb-4;
@@ -13,7 +12,7 @@
 
   .project-card {
     @apply mx-3 my-6 p-5   
-    md:m-10 md:p-10
+    md:m-10 p-0
     border-2
     rounded-xl
     text-2xl;
@@ -23,11 +22,11 @@
     @apply underline;
     text-shadow: 2px 2px 6px rgb(99, 122, 166), -2px -2px 6px rgb(99, 122, 166),
       2px -2px 6px rgb(99, 122, 166), -2px 2px 6px rgb(99, 122, 166);
-    color: #eab308 ;
+    color: #eab308;
   }
 
-  .ext-link:hover{
-    color:#22c55e
+  .ext-link:hover {
+    color: #22c55e;
   }
 
   .project-footer {
@@ -41,62 +40,77 @@
     focus:ring-2 focus:ring-blue-300 focus:ring-offset-0 focus:ring-inset
     transition duration-150 ease-in-out;
   }
+  .dark-blue {
+    background-color: #1b1835;
+  }
 }
 
-/* tailwind.css (or a globals.css that's loaded after Tailwind) */
 @layer utilities {
-  /* Base gradient text */
+  .extra-glowing-blue-border {
+    box-shadow: 0 0 40px #7b7b88;
+    border: solid 2px #93c3e1;
+  }
+  
   .text-rgb {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(90deg,
-      #ec4899 0%,#eab308 25%, #22c55e 50%, #ec4899 75%,#eab308 100%); /* yellow -> green -> pink */
+    background-image: linear-gradient(
+      90deg,
+      #ec4899 0%,
+      #eab308 25%,
+      #22c55e 50%,
+      #ec4899 75%,
+      #eab308 100%
+    ); /* yellow -> green -> pink */
     background-size: 200% 200%;
     background-position: 0% 50%;
   }
-  
 
   @keyframes rgbPulsePos {
-    0%, 100% { background-position: 0% 50%; }
-    50%      { background-position: 100% 50%; }
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
   }
-.chat-output a{
+  .chat-output a {
     text-decoration: underline;
-}
+  }
   .rgb-pulse {
     animation: rgbPulsePos 1.5s ease-in-out 1;
     will-change: background-position;
   }
 
-  /* Respect reduced-motion */
   @media (prefers-reduced-motion: reduce) {
-    .rgb-pulse { animation: none; }
+    .rgb-pulse {
+      animation: none;
+    }
   }
 }
-.nav-link:hover{
-    background-color: transparent;
-    text-shadow: 2px 2px 6px rgb(99, 122, 166),
-    -2px -2px 6px rgb(99, 122, 166), 2px -2px 6px rgb(99, 122, 166),
-    -2px 2px 6px rgb(99, 122, 166);
-  color: rgb(113, 187, 233);    
+
+.nav-link:hover {
+  background-color: transparent;
+  text-shadow: 2px 2px 6px rgb(99, 122, 166), -2px -2px 6px rgb(99, 122, 166),
+    2px -2px 6px rgb(99, 122, 166), -2px 2px 6px rgb(99, 122, 166);
+  color: rgb(113, 187, 233);
 }
 
-.rgb-gradient-2{
-    @apply 
-    bg-gradient-to-r 
+.rgb-gradient-2 {
+  @apply bg-gradient-to-r 
     from-yellow-500 
     via-green-500 
     to-pink-500 
     bg-clip-text 
-    text-transparent
+    text-transparent;
 }
-.rgb-gradient{
-   @apply 
-    bg-gradient-to-r 
+.rgb-gradient {
+  @apply bg-gradient-to-r 
     from-pink-500 
     via-yellow-500 
     to-green-500 
     bg-clip-text 
-    text-transparent
+    text-transparent;
 }
 
 @theme {
@@ -105,5 +119,5 @@
   --color-background-dark: #252445;
   --color-bj-pink: #eb5497;
   --color-bj-green: #33c15b;
-  --color-bj-yellow:#f5ce45;
+  --color-bj-yellow: #f5ce45;
 }

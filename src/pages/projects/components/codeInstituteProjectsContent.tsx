@@ -1,10 +1,7 @@
-export default function CodeInstituteProjectsContent() {
+export function HowToBuildATreeHouseContent() {
   return (
     <>
-      <h1 className="glowing-blue">Code Institute Projects</h1>
-      <h2 className="text-yellow-500 text-3xl">
-        How to Build a Treehouse
-      </h2>
+      <h2 className="text-yellow-500 text-3xl">How to Build a Treehouse</h2>
       <span className="italic text-blue-300">
         Introductory static site built with HTML & CSS
       </span>
@@ -32,7 +29,13 @@ export default function CodeInstituteProjectsContent() {
       >
         Site
       </a>
-      <br /> <br />
+    </>
+  );
+}
+
+export function BoopBallContent() {
+  return (
+    <>
       <h2 className="text-yellow-500 text-3xl">Boop Ball</h2>
       <span className="italic text-blue-300">
         Interactive browser game built with JavaScript
@@ -59,7 +62,13 @@ export default function CodeInstituteProjectsContent() {
       >
         Site
       </a>
-      <br /> <br />
+    </>
+  );
+}
+
+export function MonstoryumContent() {
+  return (
+    <>
       <h2 className="text-yellow-500 text-3xl">Terminal Based RPG</h2>
       <span className="italic text-blue-300">
         Python text RPG with Google Sheets integration
@@ -89,7 +98,13 @@ export default function CodeInstituteProjectsContent() {
       >
         Site
       </a>
-      <br /> <br />
+    </>
+  );
+}
+
+export function WordwellContent() {
+  return (
+    <>
       <h2 className="text-yellow-500 text-3xl">Wordwell Game</h2>
       <span className="italic text-blue-300">
         Full-stack word game with Django
@@ -123,12 +138,18 @@ export default function CodeInstituteProjectsContent() {
       >
         Site
       </a>
-      <br /> <br />
+    </>
+  );
+}
+
+export function DiagnosticToolContent() {
+  return (
+    <>
       <h2 className="text-yellow-500 text-3xl">Brain Tumour Diagnostic Tool</h2>
       <span className="italic text-blue-300">
         Machine learning app for MRI image classification
       </span>
-        <br />
+      <br />
       My final Code Institute project, a machine learning application that
       trains a convolutional neural network to classify MRI brain scans into
       four categories (1 healthy, 3 tumour types).
@@ -156,7 +177,6 @@ export default function CodeInstituteProjectsContent() {
       >
         Site
       </a>
-      <br /> <br />
     </>
   );
 }

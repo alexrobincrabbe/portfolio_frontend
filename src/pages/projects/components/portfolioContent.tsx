@@ -4,7 +4,8 @@ export default function PortfolioContent() {
       <h1
         className="
       w-fit
-      glowing-blue
+      text-rgb
+      font-bold
       "
       >
         Portfolio

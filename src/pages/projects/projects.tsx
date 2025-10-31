@@ -1,32 +1,45 @@
 import BoojumContent from "./components/boojumContent";
 import PortfolioContent from "./components/portfolioContent";
 import HackathonsContent from "./components/hackathonsContent";
-import CodeInstituteProjectsContent from "./components/codeInstituteProjectsContent";
+import {
+  HowToBuildATreeHouseContent,
+  BoopBallContent,
+  MonstoryumContent,
+  WordwellContent,
+  DiagnosticToolContent,
+} from "./components/codeInstituteProjectsContent";
+import HoverVideoCard from "./components/hoverVideoCard";
+import testVideo from "../../assets/videos/test.mov";
+
 export default function Projects() {
   return (
     <>
       <div className="md:p-10">
-        <div className="project-card glowing-blue-border">
+        <HoverVideoCard videoSrc="">
           <PortfolioContent />
-        </div>
-        <div className="project-card glowing-blue-border">
+        </HoverVideoCard>
+        <HoverVideoCard videoSrc={testVideo}>
           <BoojumContent />
-        </div>
-
-        <div>
-          <div className="project-card glowing-blue-border">
-            <HackathonsContent />
-          </div>
-        </div>
-        <div>
-          <div
-            className={`
-          project-card glowing-blue-border
-          `}
-          >
-            <CodeInstituteProjectsContent />
-          </div>
-        </div>
+        </HoverVideoCard>
+        <h1 className="bg-background-dark w-full text-center p-2 md:text-7xl glowing-blue">Code Institute Projects</h1>
+        <HoverVideoCard videoSrc="">
+          <HowToBuildATreeHouseContent />
+        </HoverVideoCard>
+        <HoverVideoCard videoSrc="">
+          <BoopBallContent />
+        </HoverVideoCard>
+        <HoverVideoCard videoSrc="">
+          <MonstoryumContent />
+        </HoverVideoCard>
+        <HoverVideoCard videoSrc="">
+          <WordwellContent />
+        </HoverVideoCard>
+        <HoverVideoCard videoSrc="">
+          <DiagnosticToolContent />
+        </HoverVideoCard>
+        <HoverVideoCard videoSrc="">
+          <HackathonsContent />
+        </HoverVideoCard>
       </div>
     </>
   );

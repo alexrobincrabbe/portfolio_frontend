@@ -32,7 +32,7 @@ export default function Topbar(props: TopbarProps) {
       big-shoulders
       ${pulsing ? "text-rgb rgb-pulse" : "text-rgb"}
       `}
-        onAnimationEnd={() => setPulsing(false)} // stop pulsing when CSS finishes
+        onAnimationEnd={() => setPulsing(false)}
       >
         Alexander Robin Crabbe
       </div>
