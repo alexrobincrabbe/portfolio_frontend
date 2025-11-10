@@ -50,7 +50,7 @@
     box-shadow: 0 0 40px #7b7b88;
     border: solid 2px #93c3e1;
   }
-  
+
   .text-rgb {
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(
@@ -120,4 +120,6 @@
   --color-bj-pink: #eb5497;
   --color-bj-green: #33c15b;
   --color-bj-yellow: #f5ce45;
+  --color-plant-green: #a4dfcb;
+  --font-zen-loop: "Zen Loop";
 }

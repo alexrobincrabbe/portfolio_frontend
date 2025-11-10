@@ -1,6 +1,7 @@
 import BoojumContent from "./components/boojumContent";
 import PortfolioContent from "./components/portfolioContent";
 import HackathonsContent from "./components/hackathonsContent";
+import MoodGardensContent from "./components/moodGardensContent";
 import {
   HowToBuildATreeHouseContent,
   BoopBallContent,
@@ -18,10 +19,15 @@ export default function Projects() {
         <HoverVideoCard videoSrc="">
           <PortfolioContent />
         </HoverVideoCard>
+         <HoverVideoCard videoSrc={testVideo}>
+          <MoodGardensContent />
+        </HoverVideoCard>
         <HoverVideoCard videoSrc={testVideo}>
           <BoojumContent />
         </HoverVideoCard>
-        <h1 className="bg-background-dark w-full text-center p-2 md:text-7xl glowing-blue">Code Institute Projects</h1>
+        <h1 className="bg-background-dark w-full text-center p-2 md:text-7xl glowing-blue">
+          Code Institute Projects
+        </h1>
         <HoverVideoCard videoSrc="">
           <HowToBuildATreeHouseContent />
         </HoverVideoCard>

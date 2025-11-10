@@ -66,6 +66,7 @@ function Chat() {
               if (e.key == "Enter") {
                 e.preventDefault();
                 sendQuestion(input);
+                setInput("");
               }
             }}
             placeholder="Ask about Alex…"
@@ -74,7 +75,7 @@ function Chat() {
 
           <button
             className="absolute right-[-25px]"
-            onClick={() => sendQuestion(input)}
+            onClick={() => {sendQuestion(input); setInput("")}}
             disabled={loading}
           >
             {loading ? (

@@ -31,7 +31,7 @@ export default function HoverVideoCard({
   const handleEnded = () => {
     const video = videoRef.current;
     if (video) {
-      video.classList.remove("opcacity-100");
+      video.classList.remove("opacity-100");
     }
   };
   return (
