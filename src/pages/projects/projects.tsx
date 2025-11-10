@@ -11,6 +11,7 @@ import {
 } from "./components/codeInstituteProjectsContent";
 import HoverVideoCard from "./components/hoverVideoCard";
 import testVideo from "../../assets/videos/test.mov";
+import moodGardensVideo from "../../assets/videos/MoodGardens.mov"
 
 export default function Projects() {
   return (
@@ -19,7 +20,7 @@ export default function Projects() {
         <HoverVideoCard videoSrc="">
           <PortfolioContent />
         </HoverVideoCard>
-         <HoverVideoCard videoSrc={testVideo}>
+         <HoverVideoCard videoSrc={moodGardensVideo}>
           <MoodGardensContent />
         </HoverVideoCard>
         <HoverVideoCard videoSrc={testVideo}>
