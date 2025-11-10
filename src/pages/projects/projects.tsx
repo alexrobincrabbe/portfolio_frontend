@@ -11,7 +11,7 @@ import {
 } from "./components/codeInstituteProjectsContent";
 import HoverVideoCard from "./components/hoverVideoCard";
 import testVideo from "../../assets/videos/test.mov";
-import moodGardensVideo from "../../assets/videos/MoodGardens.mov"
+import moodGardensVideo from "../../assets/videos/moodGardens.mov"
 
 export default function Projects() {
   return (
