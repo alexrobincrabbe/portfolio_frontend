@@ -86,7 +86,7 @@ The FastAPI backend:
 
 - PDF + CV text extraction
 - Embedding generation (OpenAI)
-- Vector store built at startup or precomputed
+- Vector store precomputed
 - Query → embedding → nearest-neighbour retrieval
 - Context built from top matches
 - OpenAI completion with user query + context
