@@ -1,54 +1,94 @@
-# React + TypeScript + Vite
+#  Alex Crabbe — Developer Portfolio
+### *Full-Stack Developer • AI & Backend Engineering • Real-Time Systems • Cloud-Native Architecture*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio website.  
+It showcases my full-stack projects, technical experience, and includes an **AI-powered personal assistant** built with **FastAPI**, **OpenAI embeddings**, and a small **RAG pipeline** based on my CV and background documents.
 
-Currently, two official plugins are available:
+**Live Portfolio:** https://www.alex-crabbe.vercel.app  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+##  Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### **Frontend**
+- React
+- Vite  
+- TypeScript  
+- TailwindCSS  
+- Framer Motion  
+- Custom chat UI for AI assistant  
+- Deployed on **Vercel**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### **Backend**
+- FastAPI (Python)  
+- OpenAI embeddings for vector search  
+- RAG workflow (CV + PDF documents)  
+- Email sending API for the contact form  
+- Deployed on Heroku
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### **AI**
+- OpenAI API  
+- Embedding generation  
+- Vector search  
+- Context assembly + streaming chat responses  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+##  Features
+
+###  AI-powered personal assistant
+Visitors can ask questions about me, my skills, experience, background, or projects.  
+The chatbot uses:
+
+- Embeddings of my CV + personal PDFs  
+- A FastAPI backend endpoint for retrieval  
+- Vector similarity search  
+- OpenAI chat completions  
+- A custom chat UI with typing animation
+
+---
+
+###  Home Page
+- Intro + animated hero section  
+- AI assistant embedded on the page  
+- Clean layout optimised for employers  
+
+---
+
+### Projects Page
+A curated list of my key work:
+
+- **Mood Gardens** — AI-generated emotional gardens  
+- **Boojum Games** — real-time multiplayer games (Django Channels)  
+- **Hackathon AI apps**  
+- **MRI Tumour Classifier** (ML project)  
+- And more…
+
+Each project includes:
+- Description  
+- Technology stack  
+- Links to GitHub and live demos  
+
+---
+
+### Contact Page
+A simple contact form that sends messages directly to my email via the backend.
+
+The FastAPI backend:
+- Accepts validated form submissions  
+- Sends an email to my inbox  
+
+---
+
+## Architecture Overview
+
+### RAG Architecture (Backend)
+
+- PDF + CV text extraction
+- Embedding generation (OpenAI)
+- Vector store precomputed
+- Query → embedding → nearest-neighbour retrieval
+- Context built from top matches
+- OpenAI completion with user query + context
+- Response streamed to frontend chat UI
+
