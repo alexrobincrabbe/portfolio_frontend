@@ -41,7 +41,7 @@ export default function MoodGardensContent() {
       <br />
       <p>
         <a
-          href="https://mood-gardens-frontend.vercel.app/"
+          href="https://mymoodgardens.com"
           target="_blank"
           className="ext-link"
         >
