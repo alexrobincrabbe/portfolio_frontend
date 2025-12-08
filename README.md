@@ -50,9 +50,8 @@ The chatbot uses:
 
 ###  Home Page
 - Intro + animated hero section  
-- AI assistant embedded on the page  
-- Clean layout optimised for employers  
-
+- AI assistant embedded on the page
+  
 ---
 
 ### Projects Page
@@ -91,4 +90,5 @@ The FastAPI backend:
 - Context built from top matches
 - OpenAI completion with user query + context
 - Response streamed to frontend chat UI
+- The immediate last question and response are also used for context, whilst keeping the number of tokens used low
 
