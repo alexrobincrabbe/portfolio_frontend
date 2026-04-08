@@ -37,7 +37,7 @@ export default function MoodGardensContent() {
       <span className="glowing-blue">Database</span>: Neon Database (Postgres
       SQL)
       <br />
-      <span className="glowing-blue">Other</span>: GitHub, Heroku, OpenAI API
+      <span className="glowing-blue">Other</span>: Azure container apps,  OpenAI API, Redis
       <br />
       <p>
         <a

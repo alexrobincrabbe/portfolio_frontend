@@ -39,8 +39,8 @@ export default function BoojumContent() {
       <span className="glowing-blue">Database</span>: Neon Database (Postgres
       SQL)
       <br />
-      <span className="glowing-blue">Other</span>: GitHub, Heroku, RabbitMQ,
-      Google Cloud Console, MailGun, Heroku Scheduler, Papertrail
+      <span className="glowing-blue">Other</span>: Heroku, RabbitMQ, Redis
+      Google Cloud Console, MailGun
       <br />
       <a
         href="https://boojumgames.com"

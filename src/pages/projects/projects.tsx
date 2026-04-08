@@ -9,6 +9,7 @@ import {
   WordwellContent,
   DiagnosticToolContent,
 } from "./components/codeInstituteProjectsContent";
+import { CapstoneContent, ESGContent, ImageMatcherContent } from "./components/digitalFuturesContent";
 import HoverVideoCard from "./components/hoverVideoCard";
 import testVideo from "../../assets/videos/test.mov";
 import moodGardensVideo from "../../assets/videos/moodGardens.mov"
@@ -25,6 +26,18 @@ export default function Projects() {
         </HoverVideoCard>
         <HoverVideoCard videoSrc={testVideo}>
           <BoojumContent />
+        </HoverVideoCard>
+        <h1 className="bg-background-dark w-full text-center p-2 md:text-7xl glowing-blue">
+          Digital Futures Projects
+        </h1>
+        <HoverVideoCard videoSrc="">
+          <CapstoneContent />
+        </HoverVideoCard>
+         <HoverVideoCard videoSrc="">
+          <ESGContent />
+        </HoverVideoCard>
+         <HoverVideoCard videoSrc="">
+          <ImageMatcherContent />
         </HoverVideoCard>
         <h1 className="bg-background-dark w-full text-center p-2 md:text-7xl glowing-blue">
           Code Institute Projects

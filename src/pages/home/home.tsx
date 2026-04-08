@@ -28,6 +28,12 @@ function Home() {
               blends creativity with technical challenge. It’s a project that I
               am excited to expand. The site has attracted players from across
               the world and has a vibrant user community.
+              Over the last year I’ve been working on AI-driven features and applications, 
+              exploring LLMs, RAG, and agent-based systems. My mood gardens project uses GenAI 
+              for mood analysis of diary entries and creating images using mappings of the mood analysis.
+              I have recently completed the Frontier AI training programme with digital futures, some of the
+              projects I completed during the programme can be seen in the projects section.
+                I’m particularly interested in creating interactive, intelligent systems that enhance user experiences.
             </p>
           </div>
 
